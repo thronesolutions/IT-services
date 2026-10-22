@@ -23,28 +23,52 @@
         :root { --primary-bg: #060b19; --secondary-bg: #0d162d; --accent-color: #00d2ff; --text-light: #e6f1ff; --text-muted: #8892b0; --border-color: #1a2542; }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: var(--primary-bg); color: var(--text-light); line-height: 1.8; }
+        
+        /* Header */
         header { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background: rgba(6, 11, 25, 0.95); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--border-color); }
         .logo { font-size: 24px; font-weight: bold; color: white; text-decoration: none; }
         .logo span { color: var(--accent-color); }
         nav ul { display: flex; list-style: none; gap: 30px; }
         nav ul li a { color: var(--text-light); text-decoration: none; font-weight: 500; transition: color 0.3s; }
         nav ul li a:hover { color: var(--accent-color); }
-        .nav-btn { padding: 10px 25px; background: transparent; color: var(--accent-color); border: 1px solid var(--accent-color); border-radius: 4px; text-decoration: none; font-weight: 600; }
+        .nav-btn { padding: 10px 25px; background: transparent; color: var(--accent-color); border: 1px solid var(--accent-color); border-radius: 4px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
         .nav-btn:hover { background: var(--accent-color); color: var(--primary-bg); }
+
+        /* Article Content */
         .article-container { max-width: 850px; margin: 60px auto; padding: 0 20px; }
         .back-link { color: var(--accent-color); text-decoration: none; font-size: 14px; display: inline-block; margin-bottom: 20px; }
         .back-link:hover { text-decoration: underline; }
-        .article-header { margin-bottom: 40px; text-align: center; }
+        .article-header { margin-bottom: 30px; text-align: center; }
         .article-header h1 { font-size: 42px; color: white; line-height: 1.2; margin-bottom: 15px; }
         .article-meta { color: var(--text-muted); font-size: 15px; }
+        
+        /* Featured Image Style */
+        .featured-image { width: 100%; max-height: 450px; object-fit: cover; border-radius: 12px; margin-bottom: 40px; border: 1px solid var(--border-color); }
+        
         .article-content h2 { font-size: 28px; color: var(--accent-color); margin: 40px 0 20px; }
         .article-content p { color: var(--text-light); margin-bottom: 20px; font-size: 17px; }
         .article-content ul { margin: 0 0 20px 20px; color: var(--text-light); font-size: 17px; }
         .article-content li { margin-bottom: 10px; }
         .article-content a { color: var(--accent-color); text-decoration: none; font-weight: 600; }
         .article-content a:hover { text-decoration: underline; }
-        footer { background: #040810; padding: 40px 8%; border-top: 1px solid var(--border-color); text-align: center; margin-top: 80px; }
-        footer p { color: var(--text-muted); font-size: 14px; }
+
+        /* Professional Footer */
+        footer { background: #040810; padding: 80px 8% 30px; border-top: 1px solid var(--border-color); margin-top: 80px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 60px; }
+        .footer-col h4 { color: white; font-size: 18px; margin-bottom: 25px; position: relative; }
+        .footer-col h4::after { content: ''; position: absolute; left: 0; bottom: -8px; width: 30px; height: 2px; background: var(--accent-color); }
+        .footer-col p { color: var(--text-muted); font-size: 15px; margin-bottom: 15px; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 12px; }
+        .footer-col ul li a { color: var(--text-muted); text-decoration: none; transition: color 0.3s; }
+        .footer-col ul li a:hover { color: var(--accent-color); padding-left: 5px; }
+        .footer-bottom { text-align: center; padding-top: 30px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 14px; }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 15px; padding: 15px; }
+            nav ul { gap: 15px; flex-wrap: wrap; justify-content: center; }
+            .article-header h1 { font-size: 32px; }
+        }
     </style>
 </head>
 <body>
@@ -67,6 +91,9 @@
             <h1>AI in Sheffield: How Local SMEs Can Leverage Automation to Compete</h1>
             <div class="article-meta">Published on October 24, 2026 | By Throne Solutions</div>
         </div>
+
+        <!-- Yahan Featured Image Lagi Hai -->
+        <img src="images/ai-sheffield.jpg" alt="AI Automation for Sheffield Businesses" class="featured-image">
 
         <div class="article-content">
             <p>For a long time, the narrative around Artificial Intelligence (AI) was dominated by tech giants in Silicon Valley. It seemed like a futuristic concept reserved for companies with massive research and development budgets. However, the landscape has shifted dramatically, and the impact is being felt right here in South Yorkshire.</p>
@@ -93,8 +120,42 @@
         </div>
     </article>
 
+    <!-- Professional Footer -->
     <footer>
-        <p>&copy; 2026 Throne Solutions Limited. All rights reserved. | <a href="https://thronesolutions.com/" rel="nofollow" style="color: var(--accent-color); text-decoration: none;">Visit Main Website</a></p>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 20px; display: inline-block;">THRONE <span>SOLUTIONS</span></a>
+                <p>Empowering businesses to modernize, secure, and scale their digital operations globally. Your trusted IT partner based in Sheffield, UK.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog & Insights</a></li>
+                    <li><a href="https://thronesolutions.com/our-presence/" target="_blank" rel="nofollow">Global Presence</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="https://thronesolutions.com/" rel="nofollow">Managed IT Services</a></li>
+                    <li><a href="https://thronesolutions.com/" rel="nofollow">Cybersecurity</a></li>
+                    <li><a href="https://thronesolutions.com/" rel="nofollow">Cloud Migration</a></li>
+                    <li><a href="https://thronesolutions.com/" rel="nofollow">Healthcare IT</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><p><strong>Address:</strong><br>Apartment 10 Northside, 925 Barnsley Road, Sheffield, England, S5 0QJ</p></li>
+                    <li><p><strong>Phone:</strong><br>+44 7535 677302</p></li>
+                    <li><a href="https://thronesolutions.com/contact/" rel="nofollow">Send an Email &rarr;</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Throne Solutions Limited. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
