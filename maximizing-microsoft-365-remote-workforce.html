@@ -23,7 +23,6 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: var(--primary-bg); color: var(--text-light); line-height: 1.8; }
         
-        /* Header */
         header { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background: rgba(6, 11, 25, 0.95); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--border-color); }
         .logo { font-size: 24px; font-weight: bold; color: white; text-decoration: none; }
         .logo span { color: var(--accent-color); }
@@ -33,7 +32,6 @@
         .nav-btn { padding: 10px 25px; background: transparent; color: var(--accent-color); border: 1px solid var(--accent-color); border-radius: 4px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
         .nav-btn:hover { background: var(--accent-color); color: var(--primary-bg); }
 
-        /* Article Content */
         .article-container { max-width: 850px; margin: 60px auto; padding: 0 20px; }
         .back-link { color: var(--accent-color); text-decoration: none; font-size: 14px; display: inline-block; margin-bottom: 20px; }
         .back-link:hover { text-decoration: underline; }
@@ -41,7 +39,6 @@
         .article-header h1 { font-size: 42px; color: white; line-height: 1.2; margin-bottom: 15px; }
         .article-meta { color: var(--text-muted); font-size: 15px; }
         
-        /* Featured Image Style */
         .featured-image { width: 100%; max-height: 450px; object-fit: cover; border-radius: 12px; margin-bottom: 40px; border: 1px solid var(--border-color); }
 
         .article-content h2 { font-size: 28px; color: var(--accent-color); margin: 40px 0 20px; }
@@ -51,7 +48,6 @@
         .article-content a { color: var(--accent-color); text-decoration: none; font-weight: 600; }
         .article-content a:hover { text-decoration: underline; }
 
-        /* Professional Footer */
         footer { background: #040810; padding: 80px 8% 30px; border-top: 1px solid var(--border-color); margin-top: 80px; }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 60px; }
         .footer-col h4 { color: white; font-size: 18px; margin-bottom: 25px; position: relative; }
@@ -73,10 +69,10 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">THRONE <span>SOLUTIONS</span></a>
+        <a href="./" class="logo">THRONE <span>SOLUTIONS</span></a>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="./">Home</a></li>
                 <li><a href="blog.html">Blog & Insights</a></li>
             </ul>
         </nav>
@@ -91,8 +87,7 @@
             <div class="article-meta">Published on October 21, 2026 | By Throne Solutions</div>
         </div>
 
-        <!-- Yahan Featured Image Lagi Hai -->
-        <img src="images/microsoft-365.jpg" alt="Microsoft 365 Remote Work Security" class="featured-image">
+        <img src="images/microsoft-365.jpg" alt="Microsoft 365 Remote Work Security" class="featured-image" loading="lazy" decoding="async" width="850" height="450">
 
         <div class="article-content">
             <p>The shift to remote and hybrid work is no longer a temporary trend; it is a permanent fixture of the modern business landscape. For businesses across South Yorkshire, Microsoft 365 (M365) has become the central hub for collaboration, communication, and data storage. However, many organizations are only scratching the surface of what M365 can do.</p>
@@ -116,17 +111,16 @@
         </div>
     </article>
 
-    <!-- Professional Footer -->
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
-                <a href="index.html" class="logo" style="margin-bottom: 20px; display: inline-block;">THRONE <span>SOLUTIONS</span></a>
+                <a href="./" class="logo" style="margin-bottom: 20px; display: inline-block;">THRONE <span>SOLUTIONS</span></a>
                 <p>Empowering businesses to modernize, secure, and scale their digital operations globally. Your trusted IT partner based in Sheffield, UK.</p>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./">Home</a></li>
                     <li><a href="blog.html">Blog & Insights</a></li>
                     <li><a href="https://thronesolutions.com/our-presence/" target="_blank" rel="nofollow">Global Presence</a></li>
                 </ul>
