@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Throne Solutions | Expert IT Services & Cybersecurity Sheffield</title>
+    <meta name="description" content="Throne Solutions is a leading UK IT services provider. We specialize in Managed IT, Cybersecurity, Cloud Migration, and AI solutions for global businesses.">
+    <meta name="keywords" content="IT services Sheffield, Managed IT Services, Cybersecurity UK, Cloud Migration, Healthcare IT, Throne Solutions">
+    <meta name="author" content="Throne Solutions">
+    
+    <!-- Open Graph (AI & Social Media Optimization) -->
+    <meta property="og:title" content="Throne Solutions | Expert IT Services & Cybersecurity">
+    <meta property="og:description" content="Empowering businesses to modernize, secure, and scale their digital operations globally.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thronesolutions.com/">
+
+    <!-- AI Schema Markup (JSON-LD) - Isse AI Search Engines aapko behtar samajhti hain -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Throne Solutions",
+      "url": "https://thronesolutions.com/",
+      "logo": "https://thronesolutions.com/logo.png",
+      "description": "Global IT services and managed-services company helping organizations modernize, secure, and scale their digital operations.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Apartment 10 Northside, 925 Barnsley Road",
+        "addressLocality": "Sheffield",
+        "postalCode": "S5 0QJ",
+        "addressCountry": "UK"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+45 71 444 720",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+
+    <style>
+        /* CSS STYLES */
+        :root {
+            --primary-bg: #060b19;
+            --secondary-bg: #0d162d;
+            --accent-color: #00d2ff;
+            --accent-hover: #00b8e6;
+            --text-light: #e6f1ff;
+            --text-muted: #8892b0;
+            --border-color: #1a2542;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--primary-bg); color: var(--text-light); line-height: 1.6; }
+        
+        /* Header & Navigation */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background: rgba(6, 11, 25, 0.95); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--border-color); }
+        .logo { font-size: 24px; font-weight: bold; color: white; text-decoration: none; letter-spacing: 1px; }
+        .logo span { color: var(--accent-color); }
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav ul li a { color: var(--text-light); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        nav ul li a:hover { color: var(--accent-color); }
+        .nav-btn { padding: 10px 25px; background: transparent; color: var(--accent-color); border: 1px solid var(--accent-color); border-radius: 4px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+        .nav-btn:hover { background: var(--accent-color); color: var(--primary-bg); }
+
+        /* Hero Section */
+        .hero { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 120px 8% 100px; background: radial-gradient(circle at 50% 20%, var(--secondary-bg) 0%, var(--primary-bg) 90%); }
+        .hero-text { max-width: 900px; }
+        .hero-text h1 { font-size: 52px; line-height: 1.2; margin-bottom: 25px; color: white; }
+        .hero-text h1 span { color: var(--accent-color); }
+        .hero-text p { font-size: 20px; color: var(--text-muted); margin-bottom: 40px; }
+        
+        /* Buttons */
+        .cta-group { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .btn-primary { padding: 16px 40px; background: var(--accent-color); color: var(--primary-bg); text-decoration: none; font-weight: bold; border-radius: 6px; transition: background 0.3s; font-size: 16px; }
+        .btn-primary:hover { background: var(--accent-hover); }
+        .btn-secondary { padding: 16px 40px; background: transparent; color: white; border: 1px solid white; text-decoration: none; font-weight: bold; border-radius: 6px; transition: all 0.3s; font-size: 16px; }
+        .btn-secondary:hover { background: white; color: var(--primary-bg); }
+
+        /* Stats Section */
+        .stats { display: flex; justify-content: space-around; flex-wrap: wrap; padding: 50px 8%; background: var(--secondary-bg); border-bottom: 1px solid var(--border-color); border-top: 1px solid var(--border-color); }
+        .stat-item { text-align: center; padding: 20px; }
+        .stat-item h3 { font-size: 42px; color: var(--accent-color); margin-bottom: 5px; }
+        .stat-item p { color: var(--text-muted); font-size: 15px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+
+        /* Services Section */
+        .services { padding: 100px 8%; text-align: center; }
+        .section-title { font-size: 40px; margin-bottom: 20px; color: white; }
+        .section-desc { color: var(--text-muted); max-width: 700px; margin: 0 auto 60px; text-align: center; font-size: 18px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .card { background: var(--secondary-bg); padding: 40px 30px; border-radius: 12px; border: 1px solid var(--border-color); text-align: left; transition: transform 0.3s, border-color 0.3s; }
+        .card:hover { transform: translateY(-8px); border-color: var(--accent-color); }
+        .card h3 { font-size: 24px; margin-bottom: 15px; color: white; }
+        .card p { color: var(--text-muted); font-size: 16px; margin-bottom: 25px; }
+        .card a { color: var(--accent-color); text-decoration: none; font-weight: 600; font-size: 15px; }
+        .card a:hover { text-decoration: underline; }
+
+        /* About Section */
+        .about { padding: 100px 8%; background: var(--secondary-bg); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); }
+        .about-content { max-width: 900px; margin: 0 auto; text-align: center; }
+        .about-text h2 { font-size: 40px; margin-bottom: 25px; color: white; }
+        .about-text p { color: var(--text-muted); margin-bottom: 25px; font-size: 18px; line-height: 1.8; }
+
+        /* Professional Footer */
+        footer { background: #040810; padding: 80px 8% 30px; border-top: 1px solid var(--border-color); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 60px; }
+        .footer-col h4 { color: white; font-size: 18px; margin-bottom: 25px; position: relative; }
+        .footer-col h4::after { content: ''; position: absolute; left: 0; bottom: -8px; width: 30px; height: 2px; background: var(--accent-color); }
+        .footer-col p { color: var(--text-muted); font-size: 15px; margin-bottom: 15px; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 12px; }
+        .footer-col ul li a { color: var(--text-muted); text-decoration: none; transition: color 0.3s; }
+        .footer-col ul li a:hover { color: var(--accent-color); padding-left: 5px; }
+        .footer-bottom { text-align: center; padding-top: 30px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 14px; }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 15px; padding: 15px; }
+            nav ul { gap: 15px; flex-wrap: wrap; justify-content: center; }
+            .hero-text h1 { font-size: 36px; }
+            .about-text h2, .section-title { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">THRONE <span>SOLUTIONS</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <!-- Jab aap blog page bana lein, to is link ko blog.html kar dein -->
+                <li><a href="#">Blog & Insights</a></li> 
+                <li><a href="https://thronesolutions.com/our-presence/" target="_blank">Global Presence</a></li>
+            </ul>
+        </nav>
+        <a href="https://thronesolutions.com/contact/" class="nav-btn">Get a Free Audit</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Empowering Tomorrow's <span>IT Solutions</span>, Today!</h1>
+            <p>Throne Solutions is a global technology and managed-services company. We help businesses modernize, secure, and scale their digital operations through expert IT consulting, cloud migration, and advanced cybersecurity.</p>
+            <div class="cta-group">
+                <a href="https://thronesolutions.com/contact/" class="btn-primary">Contact Our Experts</a>
+                <a href="https://thronesolutions.com/" class="btn-secondary">Visit Main Website</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat-item">
+            <h3>50+</h3>
+            <p>Countries Served</p>
+        </div>
+        <div class="stat-item">
+            <h3>2,000+</h3>
+            <p>Global Technicians</p>
+        </div>
+        <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Enterprise Support</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="section-title">Our Core Expertise</h2>
+        <p class="section-desc">We provide end-to-end technology solutions designed to eliminate downtime, protect your data, and drive business growth.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Managed IT Support</h3>
+                <p>Proactive monitoring, end-user help desk, and infrastructure management. Our 24/7 IT support ensures your team never faces technical downtime.</p>
+                <a href="https://thronesolutions.com/">Explore Managed IT &rarr;</a>
+            </div>
+            
+            <div class="card">
+                <h3>Cybersecurity Solutions</h3>
+                <p>Protect your business from ransomware and phishing. We offer penetration testing, zero-trust architecture, and continuous threat monitoring in the UK.</p>
+                <a href="https://thronesolutions.com/">Explore Cybersecurity &rarr;</a>
+            </div>
+            
+            <div class="card">
+                <h3>Cloud & DevOps</h3>
+                <p>Seamless migration to Microsoft Azure and AWS. We optimize your cloud infrastructure for maximum scalability, security, and cost-efficiency.</p>
+                <a href="https://thronesolutions.com/">Explore Cloud Services &rarr;</a>
+            </div>
+            
+            <div class="card">
+                <h3>Healthcare IT</h3>
+                <p>Specialized patient-centric systems and secure data management for life sciences. We help healthcare providers modernize their digital infrastructure.</p>
+                <a href="https://thronesolutions.com/">Explore Healthcare IT &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Why Choose Throne Solutions?</h2>
+                <p>Headquartered in Sheffield, UK, <strong>Throne Solutions</strong> combines deep technical expertise with a client-first mindset. Whether you need local IT support in South Yorkshire or enterprise-grade managed services across EMEA, APAC, and the Americas, we deliver reliable results.</p>
+                <p>We don't just fix computers; we build digital fortresses. With a global network of certified technicians, we ensure your business remains agile, compliant, and secure in an ever-changing digital landscape.</p>
+                <a href="https://thronesolutions.com/" class="btn-primary" style="display:inline-block; margin-top: 20px;">Read More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer>
+        <div class="footer-grid">
+            <!-- Col 1 -->
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 20px; display: inline-block;">THRONE <span>SOLUTIONS</span></a>
+                <p>Empowering businesses to modernize, secure, and scale their digital operations globally. Your trusted IT partner based in Sheffield, UK.</p>
+            </div>
+            
+            <!-- Col 2 -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="https://thronesolutions.com/our-presence/" target="_blank">Global Presence</a></li>
+                </ul>
+            </div>
+            
+            <!-- Col 3 -->
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="https://thronesolutions.com/">Managed IT Services</a></li>
+                    <li><a href="https://thronesolutions.com/">Cybersecurity</a></li>
+                    <li><a href="https://thronesolutions.com/">Cloud Migration</a></li>
+                    <li><a href="https://thronesolutions.com/">Healthcare IT</a></li>
+                </ul>
+            </div>
+            
+            <!-- Col 4 -->
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><p><strong>Address:</strong><br>Apartment 10 Northside, 925 Barnsley Road, Sheffield, England, S5 0QJ</p></li>
+                    <li><p><strong>Phone:</strong><br>+45 71 444 720</p></li>
+                    <li><a href="https://thronesolutions.com/contact/">Send an Email &rarr;</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Throne Solutions Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
